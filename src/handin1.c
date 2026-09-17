@@ -32,3 +32,9 @@ start:           // Her starter programmet forfra
         return 0;
     }
 };
+
+
+/*
+hvis antal sekunder overstiger maksværdien på whatever så skriv "Du har indtastet et for højt tal, prøv igen" og gå tilbage til start
+samme princip gælder negative tal
+*/
