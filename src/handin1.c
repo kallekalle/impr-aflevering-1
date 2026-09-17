@@ -5,7 +5,7 @@ int main(void)
 {
 start:           // Her starter programmet forfra
     int seconds; // Erklærer variablen seconds som en integer
-    char yes; // Erklærer variablen yes som en char til senere brug
+    char yes;    // Erklærer variablen yes som en char til senere brug
     printf("\nDette program omregner sekunder til uger, dage, timer, minutter samt resterende sekunder!\nIndtast antal sekunder herunder\n\n");
     scanf("%d", &seconds);
     printf("\nDu indtastede %d sekunder\n", seconds);
@@ -19,7 +19,6 @@ start:           // Her starter programmet forfra
     hours = hours % 24;
     int weeks = days / 7;
     days = days % 7;
-    // weeks = weeks % 52;
 
     printf("Dette svarer til: %d uger, %d dage, %d timer, %d minutter og %d sekunder\n", weeks, days, hours, minutes, seconds);
     printf("\nVil du prøve igen? y for ja\n");
