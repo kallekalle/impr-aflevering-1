@@ -10,7 +10,7 @@ start:           // Her starter programmet forfra
     scanf("%d", &seconds);
     printf("\nDu indtastede %d sekunder\n", seconds);
 
-    // Erklær de resterende variabler som integers, og herefter find resten efter divisionen
+    // Erklærer de resterende variabler som integers, og finder herefter resten efter divisionen
     int minutes = seconds / 60;
     seconds = seconds % 60;
     int hours = minutes / 60;
@@ -22,19 +22,13 @@ start:           // Her starter programmet forfra
 
     printf("Dette svarer til: %d uger, %d dage, %d timer, %d minutter og %d sekunder\n", weeks, days, hours, minutes, seconds);
     printf("\nVil du prøve igen? y for ja\n");
-    scanf(" %c", &yes);
-    if (yes == 'y')
+    scanf(" %c", &yes); // Spørger brugeren om de vil prøve igen, og gemmer svaret i variablen yes
+    if (yes == 'y') // Hvis brugeren indtaster 'y', går programmet tilbage til start
     {
-        goto start; // Går tilbage til start
+        goto start;
     }
     else
     {
         return 0;
     }
 };
-
-
-/*
-hvis antal sekunder overstiger maksværdien på whatever så skriv "Du har indtastet et for højt tal, prøv igen" og gå tilbage til start
-samme princip gælder negative tal
-*/
